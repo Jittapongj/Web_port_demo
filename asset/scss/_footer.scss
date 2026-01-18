@@ -1,0 +1,11 @@
+footer {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $gray-border;
+
+    .footer-info div {
+        font-weight: bold;
+        font-size: 12pt;
+    }
+}

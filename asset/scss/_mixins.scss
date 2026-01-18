@@ -1,0 +1,39 @@
+@import '_variables';
+
+@mixin circle-btn($color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+  background-color: $color;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+@mixin circle-button($bg-color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: $color-white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: $bg-color;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}

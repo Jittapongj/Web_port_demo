@@ -1,0 +1,147 @@
+@import 'main';
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  .profile-image-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .content-info {
+    max-width: 600px;
+    text-align: justify;
+
+    h1 {
+      font-size: 28pt;
+      margin-bottom: 10px;
+      color: $color-gray-darker;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: $color-gray-darkest;
+    }
+
+    p {
+      color: $color-gray-medium;
+      font-size: 10pt;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-indent: 30px;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .action-button {
+    @include circle-button($color-gray-medium); 
+  }
+
+  .resume-button {
+    @include circle-button($color-yellow);
+  }
+
+  .projects-button {
+    @include circle-button($color-red);
+  }
+
+  .contact-button {
+    @include circle-button($color-cyan);
+  }
+}
+
+footer {
+  background-color: $color-white;
+  padding: 20px 40px;
+  border-top: 1px solid $color-gray-light;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  color: $color-gray-medium;
+  gap: 10px;
+
+  .footer-info {
+    div {
+      font-size: 12pt;
+      font-weight: bold;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .social-links {
+    a {
+      margin-left: 10px;
+      color: $color-white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// Responsive: max-width 768px
+@media (max-width: 768px) {
+  header,
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .profile-image-container {
+      width: 200px;
+      height: 200px;
+    }
+
+    .content-info {
+      width: 100%;
+      text-align: center;
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+  .actions {
+    justify-content: center;
+  }
+}

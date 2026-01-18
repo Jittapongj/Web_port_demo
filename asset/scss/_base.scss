@@ -1,0 +1,17 @@
+// SCSS/_base.scss
+@import 'variables'; // เรียกใช้ตัวแปรเผื่อมีการเปลี่ยนสีพื้นหลังหรือฟอนต์
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack; // ใช้ตัวแปรจาก _variables.scss
+    background-color: $bg-body; // ใช้ตัวแปรจาก _variables.scss
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
