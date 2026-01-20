@@ -9,3 +9,8 @@
 @import 'resume';
 @import 'projects';
 @import 'contact';
+
+/* ซ่อนทุก section ที่เป็นเนื้อหาหลัก */
+.content-resume, .content-projects, .content-contact {
+    display: none;
+}
