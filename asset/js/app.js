@@ -1,4 +1,3 @@
-// asset/js/script.js
 $(document).ready(function() {
     
     // 1. ฟังก์ชันสำหรับการสลับหน้า
