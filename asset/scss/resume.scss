@@ -1,6 +1,11 @@
-@import 'main';
+@import 'variables';
+@import 'mixins';
+@import 'base';   
+@import 'header';  
+@import 'footer';  
 
-.section {
+
+.section-resume {
     .row {
         display: flex;
         justify-content: space-between;
@@ -121,7 +126,7 @@ footer {
         gap: 10px;
     }
 
-    .section .row {
+    .section-resume .row {
         flex-direction: column;
         align-items: stretch;
         text-align: center;

@@ -1,4 +1,9 @@
-@import 'main';
+@import 'variables';
+@import 'mixins';
+@import 'base';   
+@import 'header';  
+@import 'footer';  
+
 
 .section {
     flex-grow: 1;
@@ -9,7 +14,7 @@
     align-items: center;
 }
 
-.item {
+.box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -111,7 +116,7 @@ footer {
         gap: 10px;
     }
 
-    .item {
+    .box {
         flex-direction: column;
     }
 

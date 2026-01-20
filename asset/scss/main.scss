@@ -1,17 +1,8 @@
-// 1. CONFIGURATION (ตั้งค่าเบื้องต้น)
-// นำเข้าตัวแปรของคุณก่อน เพื่อให้ Bootstrap นำค่าสีไปใช้ (Override)
-@import 'variables';
-@import 'mixins';
 
 // 2. BOOTSTRAP 
 // เรียกไฟล์หลักของ Bootstrap (ตรวจสอบ Path ให้ถูกต้องตามโครงสร้างเครื่องคุณ)
 // ตัวอย่างเช่น หาก main.scss อยู่ในโฟลเดอร์ scss/ และ node_modules อยู่นอกสุด
 @import "../../plugin/bootstrap/node_modules/bootstrap/scss/bootstrap.scss";
-
-// 3. BASE & LAYOUT (สไตล์พื้นฐาน)
-@import 'base';    // ล้างค่า margin/padding และตั้งค่า body
-@import 'header';  // ส่วนหัวและเมนูนำทาง
-@import 'footer';  // ส่วนท้าย
 
 // 4. scss
 @import 'index';

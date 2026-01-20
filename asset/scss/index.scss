@@ -1,4 +1,9 @@
-@import 'main';
+@import 'variables';
+@import 'mixins';
+@import 'base';   
+@import 'header';  
+@import 'footer';  
+
 
 .content {
   flex-grow: 1;
