@@ -17,7 +17,7 @@ h2 {
     color: #444;
 }
 
-.item {
+.contact-item {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -29,17 +29,17 @@ h2 {
         height: 36px;
     }
 
-    &-text {
+    .item-text {
         display: flex;
         flex-direction: column;
     }
 
-    &-title {
+    .item-title {
         font-weight: bold;
         font-size: 1.1em;
     }
 
-    &-details {
+    .item-details {
         font-size: 1em;
         color: #666;
         text-decoration: none;
@@ -108,16 +108,20 @@ footer {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.75em;
         margin: 20px 0;
     }
 
-    .item {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-item {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         text-align: left;
-        padding-left: 50px;
+        padding-left: 30px;
 
         img {
             width: 40px;
@@ -128,6 +132,6 @@ footer {
     }
 
     .section {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 }

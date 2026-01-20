@@ -118,6 +118,11 @@ footer {
 
     .box {
         flex-direction: column;
+        margin-top: 1rem;
+
+        &-title {
+            font-size: 1.25rem;
+        }
     }
 
     .project-image img {
